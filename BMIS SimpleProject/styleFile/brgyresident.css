@@ -1,0 +1,211 @@
+.table-con{
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #dd2a7b2f;
+    padding: 15px;
+}
+
+.table-head{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.table-head input{
+    width: 210px;
+    outline: none;
+    vertical-align: top;
+}
+.input-con #add{
+    width: 65px;
+    border: none;
+    background-color: #dd2a7b;
+    font-family: 'Poppins';
+    color: #fff;
+    border-radius: 3px;
+    height: 29px;
+}
+.input-con #add:hover{
+    background-color: #c5216b;
+}
+.table-head #add-res{
+    background-color: #dd2a7b;
+    color: #fff;
+    border: none;
+    width: 80px;
+    font-family: 'Poppins';
+    border-radius: 3px;
+    height: 30px;
+}
+.table-head #add-res:hover{
+    background-color: #1aa137;
+}
+.table-head span{
+    vertical-align: top;
+}
+
+.input-con button{
+    margin-left: -3px;
+    border-radius: 2px;
+    width: 70px;
+    height: 29px;
+}
+
+table{
+width: 100%;
+margin-top: 15px;
+text-align: center;
+border-collapse: collapse;
+font-family: 'Poppins';
+
+}
+table, th, td{
+    border: 1px solid;
+    
+}
+th{
+    height: 60px;
+}
+tr:nth-child(even){
+    background-color: #bebebe;
+}
+td span{
+    cursor: pointer;
+}
+#btnedit:hover{
+    color: #24ac41;
+}
+#btnview:hover{
+    color: #f58529;
+}
+#btndelete:hover{
+    color: #d62828;
+}
+
+.addResInput{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#del-res-con{
+    width: 19rem;
+    display: block;
+    margin: auto;
+}
+.view-con{
+    background-color: #f0f0f0;
+    margin-top: 10px;
+    padding: 10px;
+}
+.view-con img{
+    width: 140px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+.view-con p{
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Poppins';
+    word-spacing: 6px;
+}
+
+@media (max-width: 420px) and (min-width: 320px){
+    .table-con{
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+    .table-head{
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+        
+    }
+    .table-head input{
+        outline: none;
+        vertical-align: top;
+    }
+    .addResInput{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+        
+    }
+}
+@media (max-width: 600px) and (min-width: 421px){
+    .table-con{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .table-head{
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+        
+    }
+    .table-head input{
+        outline: none;
+        vertical-align: top;
+    }
+    
+}
+@media (max-width: 800px) and (min-width: 601px){
+
+    .table-con{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .table-head{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .table-head input{
+        outline: none;
+        vertical-align: top;
+    }
+    
+
+
+}
+@media (max-width: 1024px) and (min-width: 801px){
+
+    .table-con{
+       width: 100%;
+        overflow-x: auto;
+    }
+    .table-head{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .table-head input{
+        outline: none;
+        vertical-align: top;
+    }
+
+
+}
+@media (max-width: 1280px) and (min-width: 1025px){
+
+    .table-con{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .table-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .table-head input{
+        outline: none;
+        vertical-align: top;
+    }
+    
+
+}
+   
+ 
+

@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.con{
+    width: 100%;
+    height: 100vh;
+    background-color: #6666664b;
+    position: relative;
+    
+}
+.pic-con1{
+    position: absolute;
+    display: block;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #26292b;
+}
+
+.pic-con img{
+    width: 500px;
+    height: 400px;
+    box-shadow: -2px 3px 3px grey;
+    border-radius: 3px;
+}
+.login-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    
+}
+.error{
+    color: #691911;
+    background-color: #f4d6d2;
+    border-color: #f0c5c1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    word-spacing: 2px;
+    font-family: 'Poppins';
+    width: 350px;
+    position: relative;
+    margin: auto;
+    top: 65px;
+
+}
+form{
+    width: 350px;
+    height: 400px;
+    background-color: #2e3239;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    border-radius: 3px;   
+}
+
+
+.lbl1{
+    width: 240px;
+    height: 40px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+}
+label{
+    font-size: 13px;
+    font-family: 'Poppins'
+}
+.input2{
+    margin-top: 25px;
+}
+.rbm{
+    margin-top: 7px;
+    
+}
+.rm{
+    font-size: 13px;
+    font-family: 'Poppins'
+}
+button{
+    width: 240px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    background-color: #5f7adb;
+    font-family: 'Poppins'
+}
+button:hover{
+    background-color: #506eda;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media (max-width: 420px) and (min-width: 320px){
+    .con{
+        max-width: 420px;
+        height: 100vh;
+        position: relative;
+    }
+    .pic-con1{
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .title{
+        display: block;
+        text-align: center;
+        font-size:clamp(15px,7vw,105px);
+        padding-top: 35px;
+        font-family: 'Poppins';
+        font-weight: bold;
+        color: #fff;
+    }
+    .pic-con img{
+       display: none;
+    }
+    .login-con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+        
+    }
+    form{
+        width: 340px;
+        height: 400px;
+        background-color: #2e3239;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+        border-radius: 3px
+        
+        
+    }
+    .lbl1{
+        width: 240px;
+        height: 40px;
+        outline: none;
+        border-radius: 3px;
+        border: none;
+    }
+    label{
+        font-size: 14px;
+        font-family: 'Poppins'
+    }
+    .input2{
+        margin-top: 25px;
+    }
+    .rbm{
+        margin-top: 7px;
+        
+    }
+    .rm{
+        font-size: 13px;
+        font-family: 'Poppins'
+    }
+    button{
+        width: 240px;
+        height: 40px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 17px;
+        background-color: #5f7adb;
+        font-family: 'Poppins'
+    }
+
+}
+
+@media(max-width: 600px) and (min-width: 421px){
+    .con{
+        max-width: 600px;
+        height: 100vh;
+        position: relative;
+    }
+    .pic-con1{
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .title{
+        display: block;
+        text-align: center;
+        font-size:clamp(15px,8vw,105px);
+        padding-top: 35px;
+        font-family: 'Poppins';
+        font-weight: bold;
+        color: #fff;
+    }
+    .pic-con img{
+       display: none;
+    }
+    .login-con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+        
+    }
+    form{
+        width: 340px;
+        height: 400px;
+        background-color: #2e3239;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+        border-radius: 3px
+        
+        
+    }
+    .lbl1{
+        width: 240px;
+        height: 40px;
+        outline: none;
+        border-radius: 3px;
+        border: none;
+    }
+    label{
+        font-size: 14px;
+        font-family: 'Poppins'
+    }
+    .input2{
+        margin-top: 25px;
+    }
+    .rbm{
+        margin-top: 7px;
+        
+    }
+    .rm{
+        font-size: 13px;
+        font-family: 'Poppins'
+    }
+    button{
+        width: 240px;
+        height: 40px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 17px;
+        background-color: #5f7adb;
+        font-family: 'Poppins'
+    }
+
+}
+
+@media(max-width: 768px) and (min-width: 600px){
+    .con{
+        max-width: 768px;
+        height: 100vh;
+        position: relative;
+    }
+    .pic-con1{
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .title{
+        display: block;
+        text-align: center;
+        font-size:clamp(15px,6vw,105px);
+        padding-top: 35px;
+        font-family: 'Poppins';
+        font-weight: bold;
+        color: #fff;
+    }
+    .pic-con img{
+       display: none;
+    }
+    .login-con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        
+    }
+    form{
+        width: 350px;
+        height: 400px;
+        background-color: #2e3239;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+        border-radius: 3px
+        
+        
+    }
+    .lbl1{
+        width: 240px;
+        height: 40px;
+        outline: none;
+        border-radius: 3px;
+        border: none;
+    }
+    label{
+        font-size: 14px;
+        font-family: 'Poppins'
+    }
+    .input2{
+        margin-top: 25px;
+    }
+    .rbm{
+        margin-top: 7px;
+        
+    }
+    .rm{
+        font-size: 13px;
+        font-family: 'Poppins'
+    }
+    button{
+        width: 240px;
+        height: 40px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 17px;
+        background-color: #5f7adb;
+        font-family: 'Poppins'
+    }
+
+}
+
+@media(max-width: 992px) and (min-width: 768px){
+    .con{
+        max-width: 992px;
+        height: 100vh;
+        position: relative;
+    }
+    .pic-con1{
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .title{
+        display: block;
+        text-align: center;
+        font-size:clamp(15px,4vw,105px);
+        padding-top: 35px;
+        font-family: 'Poppins';
+        font-weight: bold;
+        color: #fff;
+    }
+    .pic-con img{
+       display: block;
+    }
+    .login-con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7rem;
+        
+    }
+    form{
+        width: 350px;
+        height: 400px;
+        background-color: #2e3239;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+        border-radius: 3px
+        
+        
+    }
+    .lbl1{
+        width: 240px;
+        height: 40px;
+        outline: none;
+        border-radius: 3px;
+        border: none;
+    }
+    label{
+        font-size: 14px;
+        font-family: 'Poppins'
+    }
+    .input2{
+        margin-top: 25px;
+    }
+    .rbm{
+        margin-top: 7px;
+        
+    }
+    .rm{
+        font-size: 13px;
+        font-family: 'Poppins'
+    }
+    button{
+        width: 240px;
+        height: 40px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 17px;
+        background-color: #5f7adb;
+        font-family: 'Poppins'
+    }
+
+}
+
+@media(max-width: 1200px) and (min-width: 992px){
+    .con{
+        max-width: 1200px;
+        height: 100vh;
+        position: relative;
+    }
+    .pic-con1{
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .title{
+        display: block;
+        text-align: center;
+        font-size:clamp(15px,4vw,105px);
+        padding-top: 35px;
+        font-family: 'Poppins';
+        font-weight: bold;
+        color: #fff;
+    }
+    .pic-con img{
+       display: block;
+    }
+    .login-con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7rem;
+        
+    }
+    form{
+        width: 350px;
+        height: 400px;
+        background-color: #2e3239;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+        border-radius: 3px
+        
+        
+    }
+    .lbl1{
+        width: 240px;
+        height: 40px;
+        outline: none;
+        border-radius: 3px;
+        border: none;
+    }
+    label{
+        font-size: 14px;
+        font-family: 'Poppins'
+    }
+    .input2{
+        margin-top: 25px;
+    }
+    .rbm{
+        margin-top: 7px;
+        
+    }
+    .rm{
+        font-size: 13px;
+        font-family: 'Poppins'
+    }
+    button{
+        width: 240px;
+        height: 40px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 17px;
+        background-color: #5f7adb;
+        font-family: 'Poppins'
+    }
+
+}
+
+@media(min-width: 1200px){
+    .con{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    .pic-con1{
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .title{
+        display: block;
+        text-align: center;
+        font-size:clamp(15px,2vw,105px);
+        padding-top: 35px;
+        font-family: 'Poppins';
+        font-weight: bold;
+        color: #fff;
+    }
+    .pic-con img{
+       display: block;
+    }
+    .login-con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7rem;
+        
+    }
+    form{
+        width: 350px;
+        height: 400px;
+        background-color: #2e3239;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+        border-radius: 3px
+        
+        
+    }
+    .lbl1{
+        width: 240px;
+        height: 40px;
+        outline: none;
+        border-radius: 3px;
+        border: none;
+    }
+    label{
+        font-size: 14px;
+        font-family: 'Poppins'
+    }
+    .input2{
+        margin-top: 25px;
+    }
+    .rbm{
+        margin-top: 7px;
+        
+    }
+    .rm{
+        font-size: 13px;
+        font-family: 'Poppins'
+    }
+    button{
+        width: 240px;
+        height: 40px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 17px;
+        background-color: #5f7adb;
+        font-family: 'Poppins'
+    }
+
+}

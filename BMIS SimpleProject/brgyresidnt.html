@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleFile/dashboard.css">
+    <link rel="stylesheet" href="styleFile/brgyresident.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="con2">
+        <header>
+            <div class="left-set">
+                <button><span class="material-symbols-outlined" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions">
+                    settings
+                    </span></button>
+                <h2>Barangay Residents</h2>
+            </div>
+            <div class="right-set">
+                <a href="#">Log out</a>
+            </div>
+        </header>
+        <!-- <button class="add-member"  data-bs-toggle="modal" data-bs-target="#addMember">Add member</button> -->
+
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <img src="pics/logo.png">
+            <p>Barangay, LPC</p>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="dashboard-con">
+               
+                <ul class="dashboard-ul">
+                    <p>Dashboard</p>
+                    <li><span class="material-symbols-outlined">
+                        info
+                        </span><a href="dashboard.html">Barangay Information</a></li>
+                    <li><span class="material-symbols-outlined">
+                        groups_2
+                        </span><a href="brgyofficials.php">Barangay Officials</a></li>
+                    <li><span class="material-symbols-outlined">
+                        family_restroom
+                        </span><a href="brgyresidnt.html">Resident</a></li>
+                    <li><span class="material-symbols-outlined">
+                        person_pin
+                        </span><a href="brgyblotter.html">Blotter</a></li>
+                </ul>
+                <ul class="forms-ul">
+                    <p>Forms</p>
+                    <li><span class="material-symbols-outlined">
+                        folder_open
+                        </span><a href="#">Files</a></li>
+                    <li><span class="material-symbols-outlined">
+                       card_membership
+                        </span><a href="#">Certificates</a></li>
+                    
+                </ul>
+                <ul class="report-ul">
+                    <p>Report</p>
+                    <li><span class="material-symbols-outlined">
+                        lab_profile
+                        </span><a href="#">Reports</a></li>
+                    <li><span class="material-symbols-outlined">
+                       summarize
+                        </span><a href="#">Released Reports</a></li>
+                    
+                </ul>
+            </div>
+
+          </div>
+        </div>
+                 <!-- content -->
+
+        <div class="table-con">
+            <div class="table-head" style="overflow-x: auto;">
+                <p style="font-family: 'Poppins'; font-weight: bold;">Total Resident: <spa style="color: #dd2a7b;">120</spa></p>
+                    <div class="input-con">
+                        <input type="text" placeholder="search" id="input-search">
+                        <button type="submit" id="add"><span class="material-symbols-outlined" >
+                            search
+                            </span></button>
+                    </div>
+                    <button  id="add-res"data-bs-toggle="modal" data-bs-target="#addRes">Add<span class="material-symbols-outlined">
+                        add
+                        </span></button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Lastname</th>
+                        <th>Firstname</th>
+                        <th>Middlename</th>
+                        <th>Age</th>
+                        <th>Contact#</th>
+                        <th>Purok/Proper</th>
+                        
+                    </tr>
+                </thead>
+             <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Paglinawan</td>
+                    <td>Elton John</td>
+                    <td>Sumalinog</td>
+                    <td>25</td>
+                    <td>09465883621</td>
+                    <td>Quarry</td>
+                    <td><span class="material-symbols-outlined" id="btnedit" data-bs-toggle="modal" data-bs-target="#editRes">
+                        edit
+                        </span></td>
+                    <td><span class="material-symbols-outlined" id="btnview" data-bs-toggle="modal" data-bs-target="#viewRes">
+                        visibility
+                        </span></td>
+                    <td><span class="material-symbols-outlined" id="btndelete" data-bs-toggle="modal" data-bs-target="#delRes">
+                    delete
+                    </span></td>
+                </tr>
+             </tbody>
+               
+            </table>
+            
+        </div>
+
+        
+               <!-- Modal -->
+  <!-- <div class="modal fade" id="addRes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" id="add-res-con">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add Resident</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="overflow-x: auto;">
+          <form id="addResInput">
+            <div>
+            <input type="file" id="fileType"><br>
+            <input type="text" placeholder="Lastname"><br>
+            <input type="text" placeholder="Firstname"><br>
+            <input type="text" placeholder="Middlename"><br>
+            <input type="text" placeholder="Age">
+            <input type="text" placeholder="Gender">
+            </div>
+            <div>
+                <input type="text" placeholder="Contact#">
+                <input type="text" placeholder="Purok/Proper">
+                <input type="text" placeholder="Birth of Date">
+                <input type="text" placeholder="Status">
+                <input type="text" placeholder="Blood Type">
+                <input type="text" placeholder="Occupation">
+            </div>
+         
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>    -->
+  <div class="modal fade" id="addRes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" id="add-res-con">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Add Resident</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="addResInput">
+            <div>
+            <input type="file" class="fileType"><br>
+            <input type="text" placeholder="Lastname"><br>
+            <input type="text" placeholder="Firstname"><br>
+            <input type="text" placeholder="Middlename"><br>
+            <input type="text" placeholder="Age">
+            <input type="text" placeholder="Gender">
+            </div>
+            <div>
+                <input type="text" placeholder="Contact#">
+                <input type="text" placeholder="Purok/Proper">
+                <input type="text" placeholder="Birth of Date">
+                <input type="text" placeholder="Status">
+                <input type="text" placeholder="Blood Type">
+                <input type="text" placeholder="Occupation">
+            </div>
+         
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>   
+  <div class="modal fade" id="editRes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" id="edit-res-con">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Edit Information</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="addResInput">
+            <div>
+            <input type="file" class="fileType"><br>
+            <input type="text" placeholder="Lastname"><br>
+            <input type="text" placeholder="Firstname"><br>
+            <input type="text" placeholder="Middlename"><br>
+            <input type="text" placeholder="Age">
+            <input type="text" placeholder="Gender">
+            </div>
+            <div>
+                <input type="text" placeholder="Contact#">
+                <input type="text" placeholder="Purok/Proper">
+                <input type="text" placeholder="Birth of Date">
+                <input type="text" placeholder="Status">
+                <input type="text" placeholder="Blood Type">
+                <input type="text" placeholder="Occupation">
+            </div>
+         
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>   
+
+  <div class="modal fade" id="delRes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" id="del-res-con">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Delete record?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+          <button type="button" class="btn btn-primary">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>   
+  <div class="modal fade" id="viewRes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" id="view-res-con">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Resident Information</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="view-con">
+            <img src="pics/IMG_20230306_222026.jpg">
+            <div class="fullname">
+              <p>Paglinawan Elton John Sumalinog</p>
+              <p>Age: 25</p>
+              <p>Gender: Male</p>
+              <p>Purok: Quarry</p>
+              <p>Status: Single</p>
+              <p>Blood Type: N/A</p>
+              <p>Occupation: Student</p>
+              <p>Birth of Date: 10/22/2001</p>
+              <p>Contact#: 09579384761</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>   
+
+
+        </div>
+
+
+   
+
+
+
+
+<script>
+    const offcanvasElementList = document.querySelectorAll('.offcanvas')
+const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap.Offcanvas(offcanvasEl))
+
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

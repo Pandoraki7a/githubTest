@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.con{
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+header{
+    background-color: #26292b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 55px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.left-set{
+    display: flex;
+    margin-left: 40px;
+}
+.left-set button{
+    background-color: #5f7fab;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+}
+.left-set span{
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.left-set h2{
+    color: #fff;
+    font-family: 'Poppins';
+    margin-left: 15px;
+    cursor: default;
+    padding: 10px;
+}
+.left-set span:hover{
+    color: #5f7fab;
+}
+.right-set{
+    margin-right: 60px;
+}
+.right-set a{
+    color:#fff;
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+.right-set a:hover{
+    color: #5f7fab;
+}
+/* offcanvas */
+#offcanvasWithBothOptions{
+    max-width: 250px;
+}
+.offcanvas-header{
+    background-color: #26292b;
+    max-height: 66px;
+}
+.offcanvas-header img{
+    width: 45px;
+}
+.offcanvas-header p{
+    color: #fff;
+    padding-top: 15px;
+    font-family: 'Poppins';
+    
+}
+.offcanvas-body{
+    background-color: #1b1c1d;
+}
+.dashboard-con{
+    display: flex;
+    flex-direction: column;
+}
+.dashboard-ul{
+    font-family: 'Poppins';
+    color: #fff;
+    list-style-type: none;
+    font-size: 13px;
+    margin-top: 55px;
+
+}
+.dashboard-ul p{
+    font-size: 22px;
+    font-weight: bold;
+}
+.dashboard-ul a{
+    color: #fff;
+    text-decoration: none;
+}
+.dashboard-ul a:active{
+    color: #26292b;
+}
+.dashboard-ul a:hover{
+    color: #515bd4;
+}
+.dashboard-ul li{
+    padding-top: 10px;
+}
+.dashboard-ul span{
+    vertical-align: top;
+    padding-right: 4px;
+    font-size: 20px;
+    color: #515bd4;
+}
+.forms-ul{
+    font-family: 'Poppins';
+    color: #fff;
+    list-style-type: none;
+    font-size: 13px;
+    margin-top: 65px;
+
+}
+.forms-ul p{
+    font-size: 22px;
+    font-weight: bold;
+}
+.forms-ul a{
+    color: #fff;
+    text-decoration: none;
+}
+.forms-ul a:hover{
+    color: #24ac41;
+    
+}
+.forms-ul li{
+    padding-top: 10px;
+}
+.forms-ul span{
+    vertical-align: top;
+    padding-right: 4px;
+    font-size: 20px;
+    color: #24ac41;
+}
+
+.report-ul{
+    font-family: 'Poppins';
+    color: #fff;
+    list-style-type: none;
+    font-size: 13px;
+    margin-top: 75px;
+}
+.report-ul p{
+    font-size: 22px;
+    font-weight: bold;
+}
+.report-ul a{
+    color: #fff;
+    text-decoration: none;
+}
+.report-ul a:hover{
+    color: #d62828;
+    
+}
+.report-ul li{
+    padding-top: 10px;
+}
+.report-ul span{
+    vertical-align: top;
+    padding-right: 4px;
+    font-size: 20px;
+    color: #d62828;
+}
+
+
+                                        /* content */
+
+.bi-con{
+    margin-top: 8rem;
+}
+.row-1,.row-2{
+    display: flex;
+    justify-content: center;
+}
+.bi{
+    background-color: #515bd4;
+    width: 300px;
+    min-height: 200px;
+    position: relative;
+    border-radius: 5px;
+}
+.bi span,.bo span,.res span,.blot span
+,.files span,.certi span,.reports span,.rr span{
+    vertical-align: top;
+    color: #fff;
+    font-size: 20px;
+    cursor:default;
+    padding-right: 5px;
+   
+}
+.bi p,.bo p,.res p,.blot p
+,.files p,.certi p,.reports p,.rr p{
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-family: 'Poppins';
+    cursor:default;
+
+}
+.bi h5,.bo h5,.res h5,.blot h5
+,.files h5,.certi h5,.reports h5,.rr h5{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    cursor:default;
+}
+.mi-con{
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    
+} 
+.mi-con a,.mi-con h6{
+    color: #fff;
+    vertical-align: top;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bo{
+    width: 300px;
+    min-height: 200px;
+    background-color: #8134af;
+    position: relative;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.res{
+    width: 300px;
+    min-height: 200px;
+    background-color: #dd2a7b;
+    position: relative;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.blot{
+    width: 300px;
+    min-height: 200px;
+    background-color: #f3aa20;
+    position: relative;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.files{
+    width: 300px;
+    min-height: 200px;
+    background-color: #f58529;
+    position: relative;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.certi{
+    width: 300px;
+    min-height: 200px;
+    background-color: #d62828;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.reports{
+    width: 300px;
+    min-height: 200px;
+    background-color: #24ac41;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.rr{
+    width: 300px;
+    min-height: 200px;
+    background-color: #4267b3;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+                                    /* media querry */
+
+@media (max-width: 420px) and (min-width: 320px){
+    .con{
+        max-width: 420px;
+
+    }
+    header{
+        max-width: 420px;
+        position: relative;
+    }
+    .bi-con{
+        margin-top: 3rem;
+
+    }
+    .left-set h2{
+        font-size: 17px;
+    }
+    .left-set span{
+        position: absolute;
+        left: 10px;
+        bottom: 17px;        
+    }
+    .right-set a{
+        font-size: 14px;
+        position: absolute;
+        bottom: 17px;
+    }
+    .row-1,.row-2{
+        display: grid;
+        margin: 10px;
+        grid-template-columns: 160px 160px;
+        row-gap: 10px;
+        place-items: center;
+    }
+.bi,.bo ,.res,.blot
+,.files ,.certi ,.reports ,.rr{
+    margin: 0px;
+    max-width: 150px;
+    min-height: 150px;
+    
+}
+.mi-con{
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    
+} 
+.mi-con a{
+    font-size: 14px;
+}
+.mi-con a,.mi-con h6{
+    color: #fff;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.bi p,.bo p,.res p,.blot p
+,.files p,.certi p,.reports p,.rr p{
+    color: #fff;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-left: 5px;
+    font-family: 'Poppins';
+    cursor:default;
+
+}
+
+.bi span,.bo span,.res span,.blot span
+,.files span,.certi span,.reports span,.rr span{
+    vertical-align: top;
+    color: #fff;
+    font-size: 15px;
+    cursor:default;
+    padding-right: 5px;
+   
+}
+
+
+.bi h5,.bo h5,.res h5,.blot h5
+,.files h5,.certi h5,.reports h5,.rr h5{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    cursor:default;
+}
+
+}
+
+@media(max-width: 600px) and (min-width: 421px){
+    .con{
+        max-width: 600px;
+
+    }
+    header{
+        max-width: 600px;
+        position: relative;
+    }
+    .bi-con{
+        margin-top: 2rem;
+
+    }
+    .left-set h2{
+        font-size: 18px;
+        padding-top: 18px;
+    }
+    .left-set span{
+        position: absolute;
+        left: 12px;
+        bottom: 18px;        
+    }
+    .right-set a{
+        font-size: 14px;
+        position: absolute;
+        bottom: 17px;
+        right: 20px;
+    }
+    .row-1,.row-2{
+        display: grid;
+        margin-top: 10px;
+        grid-template-columns: 220px 220px;
+        place-items: center;
+        align-items: baseline;
+        justify-items: center;
+        row-gap: 10px;
+    }
+    .bi,.bo ,.res,.blot
+    ,.files ,.certi ,.reports ,.rr{
+        margin: 0px;
+        max-width: clamp(200px,8vw,105px);
+        min-height: 170px;
+        
+    }
+.mi-con{
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    
+} 
+.mi-con a{
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+.mi-con a,.mi-con h6{
+    color: #fff;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.bi p,.bo p,.res p,.blot p
+,.files p,.certi p,.reports p,.rr p{
+    color: #fff;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 5px;
+    font-family: 'Poppins';
+    cursor:default;
+
+}
+
+.bi span,.bo span,.res span,.blot span
+,.files span,.certi span,.reports span,.rr span{
+    vertical-align: top;
+    color: #fff;
+    font-size: 15px;
+    cursor:default;
+    padding-right: 5px;
+   
+}
+
+
+.bi h5,.bo h5,.res h5,.blot h5
+,.files h5,.certi h5,.reports h5,.rr h5{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    cursor:default;
+}
+
+
+
+
+}
+
+@media(max-width: 800px) and (min-width: 601px){
+    .con{
+        max-width:800px;
+
+    }
+    header{
+        max-width: 800px;
+        position: relative;
+    }
+    .bi-con{
+        margin-top: 7rem;
+
+    }
+}
+@media(max-width: 1024px) and (min-width: 801px){
+    .con{
+        max-width: 1024px;
+
+    }
+    header{
+        max-width: 1024px;
+        position: relative;
+    }
+    .bi-con{
+        margin-top: 7rem;
+
+    }
+}
+@media(max-width: 1280px) and (min-width: 1025px){
+    .con{
+        max-width: 1280px;
+
+    }
+    header{
+        max-width: 1280px;
+        position: relative;
+    }
+    .bi-con{
+        margin-top: 7rem;
+
+    }
+}
